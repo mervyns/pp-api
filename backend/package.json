@@ -1,0 +1,27 @@
+{
+  "name": "pp-api",
+  "version": "1.0.0",
+  "description": "API for PP Servers",
+  "main": "index.ts",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js",
+    "serve": "concurrently \"yarn run watch-ts\" \"yarn run watch-node\""
+  },
+  "author": "Mervyn Tan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.9.2",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.7.0",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}
